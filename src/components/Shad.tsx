@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { Button } from '@/src/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/src/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/src/components/ui/tabs';
-import { Calendar } from '@/src/components/ui/calendar';
 import { Slider } from '@/src/components/ui/slider';
 import { Switch } from '@/src/components/ui/switch';
 import { Label } from '@/src/components/ui/label';
@@ -17,7 +16,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Progress } from '@/src/components/ui/progress';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/src/components/ui/accordion';
 import { Alert, AlertDescription, AlertTitle } from '@/src/components/ui/alert';
-import { Avatar, AvatarFallback, AvatarImage } from '@/src/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/src/components/ui/avatar';
 import { Badge } from '@/src/components/ui/badge';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/src/components/ui/hover-card';
 import { ScrollArea } from '@/src/components/ui/scroll-area';
@@ -219,21 +218,6 @@ export default function Shadcn() {
             </CardContent>
           </Card>
 
-          {/* Original calendar component */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Calendar Component</CardTitle>
-              <CardDescription>Test calendar rendering and interactions</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Calendar
-                mode="single"
-                selected={date}
-                onSelect={setDate}
-                className="rounded-md border"
-              />
-            </CardContent>
-          </Card>
 
           {/* Original interactive components */}
           <Card>
