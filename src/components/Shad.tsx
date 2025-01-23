@@ -35,8 +35,8 @@ export default function Shadcn() {
   const [progress, setProgress] = useState(60);
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
-
+    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 pt-20">
+      <p>Statically rendered page</p>
       <div className="container mx-auto px-4 pt-24 pb-12">
         <div className="grid gap-6 md:grid-cols-2">
           <Card>
