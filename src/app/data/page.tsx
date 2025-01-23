@@ -19,15 +19,14 @@ export default async function HomePage() {
     const users: User[] = await getUsers();
 
     return (
-        <div className="mt-20">
-            <Card>
-                <CardTitle>Users</CardTitle>
-                <ul>
-                    {users.map(user => (
-                        <li key={user.id}>{user.name}</li>
-                    ))}
-                </ul>
-            </Card>
-        </div>
+        <Card>
+            <p>Data component - with suspense and fallback, server side rendered</p>
+            <CardTitle>Users</CardTitle>
+            <ul>
+                {users.map(user => (
+                    <li key={user.id}>{user.name}</li>
+                ))}
+            </ul>
+        </Card>
     );
 }

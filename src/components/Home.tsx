@@ -1,7 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '@/src/components/ui/button';
-
 
 const Text1 = "HorizontalLoop"
 const Text2 = "image"
