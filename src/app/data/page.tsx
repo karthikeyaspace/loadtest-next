@@ -1,4 +1,4 @@
-import { Card, CardTitle } from "@/src/components/ui/card";
+import DataPage from "@/src/components/Data";
 import React from "react";
 
 interface User {
@@ -21,19 +21,12 @@ async function getUsers() {
     }
 }
 
+export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
     const users: User[] = await getUsers();
 
     return (
-        <Card className="mt-20">
-            <p>Data component - with suspense and fallback, server side rendered</p>
-            <CardTitle>Users</CardTitle>
-            <ul>
-                {users.map(user => (
-                    <li key={user.id}>{user.name}</li>
-                ))}
-            </ul>
-        </Card>
+        <DataPage users={users} />
     );
 }
